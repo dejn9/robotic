@@ -16,7 +16,6 @@ body {
 }
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  //   background-color: rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 9999999999999999999;
 
@@ -28,11 +27,11 @@ body {
   .navbar-brand,
   .btn-transparent {
     font-weight: bold;
-    transition: all 0.4s ease-in-out;
-    color: rgba(0, 0, 0, 0.8) !important;
+    transition: all 0.3s ease-in-out;
+    color: rgba(0, 0, 0, 0.5) !important;
 
     &:hover {
-      color: white !important;
+      color: rgb(0, 0, 0) !important;
     }
   }
 }

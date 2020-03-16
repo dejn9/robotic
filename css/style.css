@@ -16,12 +16,12 @@ body {
   .navbar .navbar-brand,
   .navbar .btn-transparent {
     font-weight: bold;
-    transition: all 0.4s ease-in-out;
-    color: rgba(0, 0, 0, 0.8) !important; }
+    transition: all 0.3s ease-in-out;
+    color: rgba(0, 0, 0, 0.5) !important; }
     .navbar .nav-link:hover,
     .navbar .navbar-brand:hover,
     .navbar .btn-transparent:hover {
-      color: white !important; }
+      color: black !important; }
 
 .bg-hero {
   position: relative;
