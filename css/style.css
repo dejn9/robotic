@@ -58,6 +58,21 @@ h6 {
   font-weight: bold !important;
   display: table;
   border-bottom: 1px solid white; }
+  @media only screen and (max-width: 500px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center; } }
+
+@media only screen and (max-width: 500px) {
+  .blog h4,
+  .faq h5,
+  .main h4,
+  .bg-hero h1 {
+    text-align: start; } }
 
 .svg {
   width: 50px !important;
@@ -282,7 +297,14 @@ h6 {
   left: 30%;
   bottom: 0;
   max-width: 700px;
-  opacity: 0.6; }
+  opacity: 0.6;
+  /* Portrait*/ }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .bg-hero__img {
+      max-height: 800px; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .bg-hero__img {
+      max-height: 800px; } }
 
 .main .img-shape {
   position: absolute;
@@ -344,3 +366,8 @@ h6 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
+
+@media only screen and (max-width: 350px) {
+  .contact .btn-dream,
+  .bg-hero .btn-dream {
+    padding: 0 15px; } }

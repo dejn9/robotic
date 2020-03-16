@@ -57,11 +57,20 @@
     }
 }
 
-
 .contact {
     .btn {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width:350px) {
+
+    .contact,
+    .bg-hero {
+        .btn-dream {
+            padding: 0 15px;
+        }
     }
 }
