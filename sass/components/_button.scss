@@ -1,0 +1,54 @@
+.btn {
+
+    &-dream,
+    &-dream-rounded {
+        background-image: linear-gradient(to right,
+                #21d397 0%,
+                #7450fe 51%,
+                #21d397 100%);
+        background-size: 200% auto;
+        display: inline-block;
+        transition: all 0.5s;
+        border-radius: 100px;
+        min-width: 120px;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        padding: 0 20px;
+        font-weight: 600;
+
+        &:hover {
+            background-position: right center;
+            text-decoration: none;
+        }
+
+        &-rounded {
+            border-radius: 50% !important;
+            min-width: 50px;
+        }
+    }
+
+    &__telegram {
+        color: #25cbd3;
+        transition: all 0.6s ease-in-out;
+        border-radius: 100px;
+
+        &:hover {
+            text-decoration: none;
+            background-color: #25cbd3 !important;
+            color: white;
+        }
+    }
+
+    &-transparent {
+        border-radius: 100px;
+        border: 2px solid #7450fe;
+        font-size: 14px;
+        transition: all 0.6s ease-in-out;
+
+        &:hover {
+            background: #7450fe;
+            color: white !important;
+        }
+    }
+}

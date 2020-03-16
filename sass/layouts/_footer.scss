@@ -1,0 +1,24 @@
+.footer {
+  height: auto;
+  width: 100%;
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/img/core-img/footer-bg1.png');
+
+  @media only screen and (max-width: 991px) {
+    background-color: #291674;
+    background-image: none;
+  }
+
+  ul {
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

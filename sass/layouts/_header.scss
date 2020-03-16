@@ -1,0 +1,21 @@
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999999999999999999;
+
+  &-collapse {
+    padding: 20px;
+  }
+
+  .nav-link,
+  &-brand,
+  .btn-transparent {
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    color: rgba(0, 0, 0, 0.5) !important;
+
+    &:hover {
+      color: rgb(0, 0, 0) !important;
+    }
+  }
+}
