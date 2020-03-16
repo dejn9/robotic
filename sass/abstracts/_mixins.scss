@@ -4,13 +4,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-@mixin flexAlignItemsCenter {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-}
 
 @mixin topleft0 {
   top: 0;
@@ -25,23 +18,4 @@
 @mixin leftTop50 {
   top: 50%;
   left: 50%;
-}
-
-@mixin alignContentCenter {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-@mixin justifyContentSpaceBetween {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-@mixin heading {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
 }

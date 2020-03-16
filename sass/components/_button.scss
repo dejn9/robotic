@@ -1,59 +1,67 @@
 .btn {
-  &-dream,
-  &-dream-rounded {
-    background-image: linear-gradient(
-      to right,
-      #21d397 0%,
-      #7450fe 51%,
-      #21d397 100%
-    );
-    background-size: 200% auto;
-    display: inline-block;
-    transition: all 0.5s;
-    border-radius: 100px;
-    min-width: 120px;
-    text-align: center;
-    height: 48px;
-    line-height: 48px;
-    padding: 0 20px;
-    font-weight: 600;
 
-    &:hover {
-      background-position: right center;
-      text-decoration: none;
+    &-dream,
+    &-dream-rounded {
+        background-image: linear-gradient(to right,
+                #21d397 0%,
+                #7450fe 51%,
+                #21d397 100%);
+        background-size: 200% auto;
+        display: inline-block;
+        transition: all 0.5s;
+        border-radius: 100px;
+        min-width: 120px;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        padding: 0 20px;
+        font-weight: 600;
+
+        &:hover {
+            background-position: right center;
+            text-decoration: none;
+        }
+
+        &-rounded {
+            border-radius: 50% !important;
+            min-width: 50px;
+        }
     }
 
-    &-rounded {
-      border-radius: 50% !important;
-      min-width: 50px;
-    }
-  }
+    &__telegram {
+        color: #25cbd3;
+        transition: all 0.6s ease-in-out;
+        border-radius: 100px;
 
-  &__telegram {
-    color: #25cbd3;
-    transition: all 0.6s ease-in-out;
-    border-radius: 100px;
-
-    &:hover {
-      text-decoration: none;
-      background-color: #25cbd3 !important;
-      color: white;
-    }
-  }
-
-  &-transparent {
-    border-radius: 100px;
-    border: 2px solid #7450fe;
-    font-size: 14px;
-    transition: all 0.6s ease-in-out;
-
-    @media only screen and (min-width: 992px) {
-      padding: 8px 16px !important;
+        &:hover {
+            text-decoration: none;
+            background-color: #25cbd3 !important;
+            color: white;
+        }
     }
 
-    &:hover {
-      background: #7450fe;
-      color: white !important;
+    &-transparent {
+        border-radius: 100px;
+        border: 2px solid #7450fe;
+        font-size: 14px;
+        transition: all 0.6s ease-in-out;
+
+        @media only screen and (min-width: 992px) {
+            padding: 8px 16px !important;
+        }
+
+        &:hover {
+            background: #7450fe;
+            color: white !important;
+        }
     }
-  }
+}
+
+
+.contact {
+    .btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
