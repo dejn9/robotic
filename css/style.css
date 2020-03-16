@@ -3,8 +3,10 @@ body {
   z-index: 0;
   background: linear-gradient(180deg, #240044 0, #0f0240 25%, #400959 40%, #0f0240 65%, #0f0240); }
 
+.wrap {
+  max-width: 100%; }
+
 .navbar {
-  background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   background-color: rgba(0, 0, 0, 0.5); }
   .navbar-collapse {
@@ -39,6 +41,15 @@ body {
   background-size: cover;
   opacity: 0.9;
   background-position: center center; }
+  .bg-hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #4431ca;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9; }
   @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .bg-hero {
       height: 60vh; } }
@@ -51,29 +62,18 @@ body {
   @media only screen and (max-width: 500px) {
     .bg-hero {
       min-height: 800px; } }
-  .bg-hero::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #4431ca;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9; }
   .bg-hero__img {
     position: absolute;
-    left: 60%;
-    transform: translateX(-40%);
     height: 100vh;
-    z-index: 2; }
-    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-      .bg-hero__img {
-        visibility: hidden; } }
+    z-index: 2;
+    left: 30%;
+    max-width: 700px; }
   .bg-hero .container {
-    position: relative;
-    z-index: 5; }
-  .bg-hero .row-1 {
-    padding-top: 150px; }
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%); }
 
 ul {
   margin: 0;
@@ -133,8 +133,7 @@ ul {
       border: none;
       padding: 0; }
 
-.btn-dream,
-.btn-dream-rounded {
+.btn-dream, .btn-dream-rounded {
   background-image: linear-gradient(to right, #21d397 0%, #7450fe 51%, #21d397 100%);
   background-size: 200% auto;
   display: inline-block;
@@ -146,11 +145,9 @@ ul {
   line-height: 48px;
   padding: 0 20px;
   font-weight: 600; }
-  .btn-dream:hover,
-  .btn-dream-rounded:hover {
+  .btn-dream:hover, .btn-dream-rounded:hover {
     background-position: right center; }
-  .btn-dream-rounded,
-  .btn-dream-rounded-rounded {
+  .btn-dream-rounded, .btn-dream-rounded-rounded {
     border-radius: 50% !important;
     min-width: 50px; }
 
@@ -185,7 +182,7 @@ ul {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: url(../img/core-img/wave-shap.png) no-repeat center center;
+    background: url("../img/core-img/wave-shap.png") no-repeat center center;
     background-size: contain;
     opacity: 0.5;
     z-index: -1; }
