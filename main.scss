@@ -17,6 +17,7 @@ body {
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999999999999999999999999999999999999999999999;
 
   &-collapse {
     padding: 20px;
@@ -96,7 +97,7 @@ body {
 
   .container {
     position: absolute;
-    z-index: 5;
+    z-index: 10000;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -30%);
