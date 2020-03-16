@@ -8,8 +8,8 @@ body {
 
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999999999999999999999999999999999999999999999; }
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999999999999999999; }
   .navbar-collapse {
     padding: 20px; }
   .navbar .nav-link,
@@ -17,7 +17,7 @@ body {
   .navbar .btn-transparent {
     font-weight: bold;
     transition: all 0.4s ease-in-out;
-    color: rgba(255, 255, 255, 0.7) !important; }
+    color: rgba(0, 0, 0, 0.8) !important; }
     .navbar .nav-link:hover,
     .navbar .navbar-brand:hover,
     .navbar .btn-transparent:hover {
@@ -30,7 +30,7 @@ body {
   top: 0;
   background-image: url("/img/bg-img/bg-2.jpg");
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 1;
   background-size: cover;
   opacity: 0.9;
   background-position: center center; }
@@ -48,10 +48,11 @@ body {
       height: 60vh; } }
   @media only screen and (max-width: 991px) {
     .bg-hero {
-      max-height: 800px; } }
+      max-height: 850px;
+      padding: 50px 0; } }
   @media only screen and (min-width: 992px) {
     .bg-hero {
-      min-height: 500px; } }
+      min-height: 630px; } }
   @media only screen and (max-width: 500px) {
     .bg-hero {
       min-height: 800px; } }
@@ -60,13 +61,14 @@ body {
     height: 100vh;
     z-index: 2;
     left: 30%;
+    bottom: 0;
     max-width: 700px; }
   .bg-hero .container {
     position: absolute;
     z-index: 10000;
     left: 50%;
     top: 30%;
-    transform: translate(-50%, -30%); }
+    transform: translateX(-50%); }
 
 ul {
   margin: 0;
@@ -111,8 +113,6 @@ ul {
       position: relative;
       top: -15px;
       border-radius: 15px; }
-    .main .video-box .img-fluid {
-      width: 90% !important; }
     .main .video-box #video-play:hover i {
       color: black; }
     .main .video-box #video-play i {
@@ -139,7 +139,8 @@ ul {
   padding: 0 20px;
   font-weight: 600; }
   .btn-dream:hover, .btn-dream-rounded:hover {
-    background-position: right center; }
+    background-position: right center;
+    text-decoration: none; }
   .btn-dream-rounded, .btn-dream-rounded-rounded {
     border-radius: 50% !important;
     min-width: 50px; }
@@ -273,3 +274,6 @@ ul {
     .footer ul a:hover {
       text-decoration: none;
       color: white; }
+
+.modal-content {
+  top: 30vh; }
