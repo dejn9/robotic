@@ -22,14 +22,6 @@ body {
     .navbar .navbar-brand:hover,
     .navbar .btn-transparent:hover {
       color: white !important; }
-  .navbar .btn-transparent {
-    border-radius: 100px;
-    border: 2px solid #7450fe;
-    font-size: 14px;
-    transition: all 0.6s ease-in-out; }
-    .navbar .btn-transparent:hover {
-      background: #7450fe;
-      color: white !important; }
 
 .bg-hero {
   position: relative;
@@ -160,6 +152,15 @@ ul {
     text-decoration: none;
     background-color: #25cbd3 !important;
     color: white; }
+
+.btn-transparent {
+  border-radius: 100px;
+  border: 2px solid #7450fe;
+  font-size: 14px;
+  transition: all 0.6s ease-in-out; }
+  .btn-transparent:hover {
+    background: #7450fe;
+    color: white !important; }
 
 .services .subscribe {
   border-radius: 15px;
